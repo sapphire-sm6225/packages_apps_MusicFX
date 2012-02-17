@@ -69,13 +69,12 @@ public class Compatibility {
             log("read " + defPackage + "/" + defName + " as default");
             if (defPackage == null || defName == null) {
                 Log.e(TAG, "no default set!");
-                // use the built-in panel
-                i.setComponent(new ComponentName(this, ActivityMusic.class));
-                // also save it as the default
+                // pick a default panel
                 Intent updateIntent = new Intent(this, Service.class);
-                updateIntent.putExtra("defPackage", getPackageName());
-                updateIntent.putExtra("defName", ActivityMusic.class.getName());
+                Intent reasonIntent = new Intent();
+                updateIntent.putExtra("reason", reasonIntent);
                 startService(updateIntent);
+                // send intent again without specifying component.
             } else {
                 i.setComponent(new ComponentName(defPackage, defName));
             }
@@ -137,8 +136,8 @@ public class Compatibility {
             String updatedPackage = null;
             if (packageUri != null) {
                 updatedPackage = packageUri.toString().substring(8);
-                pickDefaultControlPanel(updatedPackage);
             }
+            pickDefaultControlPanel(updatedPackage);
         }
 
         private void pickDefaultControlPanel(String updatedPackage) {
