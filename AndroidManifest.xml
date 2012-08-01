@@ -80,7 +80,8 @@
         </receiver>
         <service android:name="Compatibility$Service" android:exported="false" />
         <activity
-            android:name="Compatibility$Redirector">
+            android:name="Compatibility$Redirector"
+            android:theme="@android:style/Theme.NoDisplay">
             <intent-filter
                 android:priority="2147483647">
                 <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
