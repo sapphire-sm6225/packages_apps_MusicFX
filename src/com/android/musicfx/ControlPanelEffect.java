@@ -1296,6 +1296,22 @@ public class ControlPanelEffect {
     }
 
     /**
+     * Gets the (integer) audio session from a package name.
+     *
+     * @param packageName
+     *
+     * @return session or -1 if no session open.
+     */
+    public static int getSession(final String packageName) {
+        final Integer currentAudioSession = mPackageSessions.get(packageName);
+        if (currentAudioSession != null) {
+            return currentAudioSession;
+        } else {
+            return -1;
+        }
+    }
+
+    /**
      * Enables or disables all effects (global enable/disable) for a given context, package name and
      * audio session. It sets/inits the control mode and preferences and then sets the global
      * enabled parameter.
