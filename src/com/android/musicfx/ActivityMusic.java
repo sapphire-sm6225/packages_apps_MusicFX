@@ -234,6 +234,12 @@ public class ActivityMusic extends Activity implements OnSeekBarChangeListener {
             finish();
             return;
         }
+        if (mAudioSession == AudioEffect.ERROR_BAD_VALUE) {
+            // Assume that no session was provided in the intent. Instead
+            // try to see if there is already an open session for the
+            // package.
+            mAudioSession = ControlPanelEffect.getSession(mCallingPackageName);
+        }
         setResult(RESULT_OK);
 
         Log.v(TAG, mCallingPackageName + " (" + mAudioSession + ")");
