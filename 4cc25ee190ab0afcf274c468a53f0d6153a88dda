@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "59141288_c4365e17",
+        "filename": "src/com/android/musicfx/ControlPanelEffect.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1309,
+      "author": {
+        "id": 1037953
+      },
+      "writtenOn": "2015-10-16T10:52:59Z",
+      "side": 1,
+      "message": "Changed from using -1 to use ERROR_BAD_VALUE. Instead of using a rather arbitrary \"error\" value for a session it seemed better to use the system provided error indication.",
+      "revId": "4cc25ee190ab0afcf274c468a53f0d6153a88dda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
