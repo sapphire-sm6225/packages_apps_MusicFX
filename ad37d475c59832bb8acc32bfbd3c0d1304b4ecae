@@ -22,6 +22,30 @@
       "revId": "ad37d475c59832bb8acc32bfbd3c0d1304b4ecae",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ea5e142e_d6da6948",
+        "filename": "src/com/android/musicfx/Compatibility.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1243029
+      },
+      "writtenOn": "2018-10-16T06:56:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "538acf36_4e682d6b",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 66
+      },
+      "revId": "ad37d475c59832bb8acc32bfbd3c0d1304b4ecae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
