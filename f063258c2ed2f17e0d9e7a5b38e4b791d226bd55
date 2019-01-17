@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "10509516_97ed63a8",
+        "filename": "src/com/android/musicfx/Compatibility.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2019-01-17T20:52:48Z",
+      "side": 1,
+      "message": "The previous CL did not have this line, and I asked whether that wouldn\u0027t end up starting the Redirector activity again. Now it explicitly sets the Redirector activity as the component, so doesn\u0027t it still relaunch the same activity again? And then wouldn\u0027t that new Redirector launch itself again, and again? What\u0027s preventing that from happening?",
+      "revId": "f063258c2ed2f17e0d9e7a5b38e4b791d226bd55",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
