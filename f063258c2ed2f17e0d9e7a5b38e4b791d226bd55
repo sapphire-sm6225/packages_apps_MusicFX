@@ -34,6 +34,24 @@
       "revId": "f063258c2ed2f17e0d9e7a5b38e4b791d226bd55",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cfffe073_0b970fb6",
+        "filename": "src/com/android/musicfx/Compatibility.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2019-01-18T00:13:41Z",
+      "side": 1,
+      "message": "The service is asynchronous though, so it seems unlikely that pickDefaultControlPanel() will already have been called by the time startActivity() is called below, so I would expect Redirector to get started at least one more time and possibly more before the default package and name are actually set.",
+      "parentUuid": "a95b319c_e5a0a4ba",
+      "revId": "f063258c2ed2f17e0d9e7a5b38e4b791d226bd55",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
