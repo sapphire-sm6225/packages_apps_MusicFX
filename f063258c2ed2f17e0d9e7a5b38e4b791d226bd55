@@ -52,6 +52,24 @@
       "revId": "f063258c2ed2f17e0d9e7a5b38e4b791d226bd55",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5c0c160_c03f9533",
+        "filename": "src/com/android/musicfx/Compatibility.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1243029
+      },
+      "writtenOn": "2019-01-18T03:30:52Z",
+      "side": 1,
+      "message": "Thank you for your comment.\nAs you mentioned, the previous CL works only from second time so I have updated the CL.\ncould you review it?\nI confirmed it works fine even when the Redirector is called first time.",
+      "parentUuid": "cfffe073_0b970fb6",
+      "revId": "f063258c2ed2f17e0d9e7a5b38e4b791d226bd55",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
