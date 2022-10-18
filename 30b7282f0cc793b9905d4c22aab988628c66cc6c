@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad27d217_82968176",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2022-10-18T16:59:54Z",
+      "side": 1,
+      "message": "lgtm, but I haven\u0027t been on the media team in a while and should probably be removed from the OWNERS file",
+      "revId": "30b7282f0cc793b9905d4c22aab988628c66cc6c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
