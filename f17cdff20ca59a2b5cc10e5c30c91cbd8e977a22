@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c68ef74_463dc65f",
+        "filename": "src/com/android/musicfx/ActivityMusic.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 1003259
+      },
+      "writtenOn": "2023-03-23T00:48:11Z",
+      "side": 1,
+      "message": "type",
+      "range": {
+        "startLine": 250,
+        "startChar": 46,
+        "endLine": 250,
+        "endChar": 66
+      },
+      "revId": "f17cdff20ca59a2b5cc10e5c30c91cbd8e977a22",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
