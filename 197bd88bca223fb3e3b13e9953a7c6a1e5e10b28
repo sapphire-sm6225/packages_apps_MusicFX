@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "500829a1_1e1fe609",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1956242
+      },
+      "writtenOn": "2023-12-12T17:53:59Z",
+      "side": 1,
+      "message": "this is clean CP of ag/24608716, pls help with owner review, thanks!",
+      "revId": "197bd88bca223fb3e3b13e9953a7c6a1e5e10b28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
