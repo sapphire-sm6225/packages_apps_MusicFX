@@ -18,7 +18,7 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" msgid="2227320688818248940">"MusicFX"</string>
     <string name="no_effects" msgid="9023408561505030260">"Effects not available."</string>
-    <string name="eq_dialog_title" msgid="3237402214371962070">"Equaliser"</string>
+    <string name="eq_dialog_title" msgid="3237402214371962070">"Equalizer"</string>
     <string name="headset_plug" msgid="1774198554148807517">"Plug in headphones for these effects."</string>
     <string name="bass_boost_strength" msgid="8643071340166812205">"Bass boost"</string>
     <string name="virtualizer_strength" msgid="2139410708760989842">"Surround sound"</string>
@@ -28,8 +28,8 @@
     <string name="dance" msgid="212617702657103572">"Dance"</string>
     <string name="flat" msgid="2844441946717126606">"Flat"</string>
     <string name="folk" msgid="5648693824262941979">"Folk"</string>
-    <string name="heavy_metal" msgid="3885222304402494034">"Heavy metal"</string>
-    <string name="hip_hop" msgid="4147534012796302488">"Hip hop"</string>
+    <string name="heavy_metal" msgid="3885222304402494034">"Heavy Metal"</string>
+    <string name="hip_hop" msgid="4147534012796302488">"Hip Hop"</string>
     <string name="jazz" msgid="556328727821095055">"Jazz"</string>
     <string name="pop" msgid="8568493898002509539">"Pop"</string>
     <string name="rock" msgid="4226553710464965901">"Rock"</string>
