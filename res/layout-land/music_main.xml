@@ -50,6 +50,8 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:drawSelectorOnTop="true"
+                android:popupBackground="@drawable/bg_popup"
+                android:dropDownVerticalOffset="4dp"
             />
 
             <LinearLayout
@@ -70,13 +72,13 @@
                         android:layout_height="wrap_content"
                         android:minHeight="?android:attr/listPreferredItemHeight"
                         android:gravity="center_vertical"
-                        android:paddingRight="?android:attr/scrollbarSize"
-                        android:layout_marginLeft="15dip"
-                        android:layout_marginRight="6dip"
-                        android:layout_marginTop="6dip"
-                        android:layout_marginBottom="6dip"
+                android:padding="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:orientation="vertical"
-                        android:background="@android:drawable/list_selector_background">
+                        android:background="@drawable/bg_card">
                         <TextView
                             android:id="@+id/bBStrengthText"
                             android:layout_width="wrap_content"
@@ -101,13 +103,13 @@
                         android:layout_height="wrap_content"
                         android:minHeight="?android:attr/listPreferredItemHeight"
                         android:gravity="center_vertical"
-                        android:paddingRight="?android:attr/scrollbarSize"
-                        android:layout_marginLeft="15dip"
-                        android:layout_marginRight="6dip"
-                        android:layout_marginTop="6dip"
-                        android:layout_marginBottom="6dip"
+                android:padding="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:orientation="vertical"
-                        android:background="@android:drawable/list_selector_background">
+                        android:background="@drawable/bg_card">
                         <TextView
                             android:id="@+id/vIStrengthText"
                             android:layout_width="wrap_content"

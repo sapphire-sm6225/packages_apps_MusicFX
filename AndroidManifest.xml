@@ -31,7 +31,7 @@
         android:allowBackup="false">
         <activity
             android:name=".ActivityMusic"
-            android:theme="@android:style/Theme.DeviceDefault.DayNight"
+            android:theme="@style/Theme.MusicFX"
             android:exported="true"
             android:label="@string/eq_dialog_title">
             <intent-filter>

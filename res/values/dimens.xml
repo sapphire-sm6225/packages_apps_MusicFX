@@ -16,6 +16,6 @@
 
 <resources>
     <dimen name="eq_slider_margin">5dip</dimen>
-    <dimen name="eq_slider_height">180dip</dimen>
+    <dimen name="eq_slider_height">220dip</dimen>
     <dimen name="action_bar_switch_padding">16dip</dimen>
 </resources>
