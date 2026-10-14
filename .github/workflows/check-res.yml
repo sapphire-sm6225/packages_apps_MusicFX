@@ -12,11 +12,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: aapt2 compile + link
         run: |
-          set -e
           BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
           JAR=$(ls -d "$ANDROID_HOME"/platforms/android-* | sort -V | tail -1)/android.jar
           echo "build-tools: $BT  jar: $JAR"
-          "$BT/aapt2" compile --dir res -o "$RUNNER_TEMP/res.zip"
-          "$BT/aapt2" link -o "$RUNNER_TEMP/out.apk" -I "$JAR" \
-            --manifest AndroidManifest.xml --min-sdk-version 35 --target-sdk-version 35 \
-            --auto-add-overlay "$RUNNER_TEMP/res.zip"
+          {
+            "$BT/aapt2" compile --dir res -o "$RUNNER_TEMP/res.zip" &&
+            "$BT/aapt2" link -o "$RUNNER_TEMP/out.apk" -I "$JAR" \
+              --manifest AndroidManifest.xml --min-sdk-version 35 --target-sdk-version 35 \
+              --auto-add-overlay "$RUNNER_TEMP/res.zip"
+          } > "$RUNNER_TEMP/log.txt" 2>&1 && exit 0
+          # one-line annotation so the error shows in the run summary
+          echo "::error::$(head -c 1500 "$RUNNER_TEMP/log.txt" | tr '\n' '|')"
+          cat "$RUNNER_TEMP/log.txt"
+          exit 1
