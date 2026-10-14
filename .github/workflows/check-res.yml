@@ -1,0 +1,22 @@
+name: check-res
+# Fast resource check: links res/ against the public android.jar, so private
+# @android: references, missing resources and broken XML fail in ~1 minute
+# instead of after a full ROM build. It does not compile the Java.
+on:
+  push:
+  pull_request:
+jobs:
+  aapt2-link:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: aapt2 compile + link
+        run: |
+          set -e
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          JAR=$(ls -d "$ANDROID_HOME"/platforms/android-* | sort -V | tail -1)/android.jar
+          echo "build-tools: $BT  jar: $JAR"
+          "$BT/aapt2" compile --dir res -o "$RUNNER_TEMP/res.zip"
+          "$BT/aapt2" link -o "$RUNNER_TEMP/out.apk" -I "$JAR" \
+            --manifest AndroidManifest.xml --min-sdk-version 35 --target-sdk-version 35 \
+            --auto-add-overlay "$RUNNER_TEMP/res.zip"
