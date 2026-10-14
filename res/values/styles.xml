@@ -22,7 +22,7 @@
     </style>
 
     <!-- Material 3 look for the on/off switch, resources only (no Java change) -->
-    <style name="Widget.MusicFX.Switch" parent="@android:style/Widget.DeviceDefault.CompoundButton.Switch">
+    <style name="Widget.MusicFX.Switch">
         <item name="android:track">@drawable/switch_track</item>
         <item name="android:thumb">@drawable/switch_thumb</item>
         <item name="android:showText">false</item>
