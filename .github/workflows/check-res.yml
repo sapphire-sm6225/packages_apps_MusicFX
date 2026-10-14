@@ -19,9 +19,16 @@ jobs:
             "$BT/aapt2" compile --dir res -o "$RUNNER_TEMP/res.zip" &&
             "$BT/aapt2" link -o "$RUNNER_TEMP/out.apk" -I "$JAR" \
               --manifest AndroidManifest.xml --min-sdk-version 35 --target-sdk-version 35 \
-              --auto-add-overlay "$RUNNER_TEMP/res.zip"
+              --auto-add-overlay --output-text-symbols "$RUNNER_TEMP/R.txt" "$RUNNER_TEMP/res.zip"
           } > "$RUNNER_TEMP/log.txt" 2>&1 && exit 0
           # one-line annotation so the error shows in the run summary
           echo "::error::$(head -c 1500 "$RUNNER_TEMP/log.txt" | tr '\n' '|')"
           cat "$RUNNER_TEMP/log.txt"
+          exit 1
+      - name: java syntax, R.* references, manifest classes
+        run: |
+          pip install -q javalang
+          python3 .github/scripts/check.py "$RUNNER_TEMP/R.txt" > "$RUNNER_TEMP/c.txt" 2>&1 && { cat "$RUNNER_TEMP/c.txt"; exit 0; }
+          echo "::error::$(head -c 1500 "$RUNNER_TEMP/c.txt" | tr '\n' '|')"
+          cat "$RUNNER_TEMP/c.txt"
           exit 1
