@@ -23,6 +23,9 @@
 
     <!-- Material 3 look for the on/off switch, resources only (no Java change) -->
     <style name="Widget.MusicFX.Switch" parent="">
+        <!-- no parent, so clickable/focusable (normally inherited from Widget.Button) must be set here -->
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
         <item name="android:track">@drawable/switch_track</item>
         <item name="android:thumb">@drawable/switch_thumb</item>
         <item name="android:showText">false</item>
