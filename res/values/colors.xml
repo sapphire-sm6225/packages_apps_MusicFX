@@ -15,7 +15,7 @@
 -->
 <resources>
     <!-- Material You surface colors supplied by the platform (Android 14+) -->
-    <color name="card_bg">@android:color/system_surface_container_light</color>
+    <color name="card_bg">@android:color/system_surface_container_highest_light</color>
     <color name="popup_bg">@android:color/system_surface_container_high_light</color>
     <color name="switch_track_on">@android:color/system_primary_light</color>
     <color name="switch_track_off">@android:color/system_surface_container_highest_light</color>

@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <color name="card_bg">@android:color/system_surface_container_dark</color>
+    <color name="card_bg">@android:color/system_surface_container_highest_dark</color>
     <color name="popup_bg">@android:color/system_surface_container_high_dark</color>
     <color name="switch_track_on">@android:color/system_primary_dark</color>
     <color name="switch_track_off">@android:color/system_surface_container_highest_dark</color>

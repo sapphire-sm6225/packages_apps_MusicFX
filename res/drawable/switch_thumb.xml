@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true">
-        <shape android:shape="oval">
+<!-- Switch stretches the thumb to the full track height, so keep the circle fixed-size and centred
+     inside a 24x24 box (the box size is what the Switch uses to place the thumb). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="24dp" android:height="24dp">
+        <shape android:shape="rectangle">
             <size android:width="24dp" android:height="24dp" />
-            <solid android:color="@color/switch_thumb_on" />
+            <solid android:color="@android:color/transparent" />
         </shape>
     </item>
-    <item>
-        <shape android:shape="oval">
-            <size android:width="16dp" android:height="16dp" />
-            <solid android:color="@color/switch_outline" />
-        </shape>
+    <item android:gravity="center">
+        <selector>
+            <item android:state_checked="true">
+                <shape android:shape="oval">
+                    <size android:width="24dp" android:height="24dp" />
+                    <solid android:color="@color/switch_thumb_on" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <size android:width="16dp" android:height="16dp" />
+                    <solid android:color="@color/switch_outline" />
+                </shape>
+            </item>
+        </selector>
     </item>
-</selector>
+</layer-list>
